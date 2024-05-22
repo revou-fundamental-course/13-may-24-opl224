@@ -2,8 +2,146 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projek Pertama</title>
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="website icon" href="assets/me.png" />
   </head>
-  <body></body>
+  <body class="poppins-regular">
+    <h1 class="text-title">Selamat datang di Kalkulator sederhana</h1>
+    <br />
+    <div class="section1">
+      <p>KALKULATOR SEGITIGA</p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h5 class="card-title">Rumus Luas Segitiga</h5>
+            <img
+              class="card-img-top"
+              src="assets/segitiga.jpeg"
+              alt="Card image cap"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text" style="text-align: center">
+                <b>L = 1/2 × a × t</b>
+              </p>
+              <p class="card-text">Di mana:</p>
+              <p class="card-text">L : Luas</p>
+              <p class="card-text">a : alas</p>
+              <p class="card-text">t : tinggi</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="alas"
+                  placeholder="Nilai Alas"
+                />
+              </li>
+              <li class="list-group-item">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="tinggi"
+                  placeholder="Nilai Tinggi"
+                />
+              </li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-primary" onclick="hitungLuas()">
+                Hitung
+              </button>
+              <button class="btn btn-danger" onclick="resetLuas()">
+                Reset
+              </button>
+              <p class="rumusLuas mt-4"></p>
+              <p id="hasilLuas" class="hasilLuas mt-4"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <h5 class="card-title">Rumus Keliling Segitiga</h5>
+            <img
+              class="card-img-top"
+              src="assets/segitiga.jpeg"
+              alt="Card image cap"
+            />
+            <hr />
+            <div class="card-body">
+              <p class="card-text" style="text-align: center">
+                <b>K = S1 + S2 + S3</b>
+              </p>
+              <p class="card-text">Di mana:</p>
+              <p class="card-text">K : Keliling</p>
+              <p class="card-text">S1 : Sisi A</p>
+              <p class="card-text">S2 : Sisi B</p>
+              <p class="card-text">S3 : Sisi C</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Sisi1"
+                  placeholder="Nilai Sisi A"
+                />
+              </li>
+              <li class="list-group-item">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Sisi2"
+                  placeholder="Nilai Sisi B"
+                />
+              </li>
+              <li class="list-group-item">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Sisi3"
+                  placeholder="Nilai Sisi C"
+                />
+              </li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-primary" onclick="hitungKeliling()">
+                Hitung
+              </button>
+              <button class="btn btn-danger" onclick="resetKeliling()">
+                Reset
+              </button>
+              <p class="rumusKeliling mt-4"></p>
+              <p id="hasilKeliling" class="hasilKeliling mt-4"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,91 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-title {
+  color: transparent;
+  font-size: 80px;
+  -webkit-text-stroke: 3px cyan;
+  text-align: center;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  justify-content: center;
+  display: flex;
+}
+
+.text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+}
+
+.section1 {
+  background-color: #4e8dc3;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  background-color: #4e8dc3;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+  cursor: no-drop;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  color: black;
+  margin-top: 20px;
+}
+
+.card-img-top {
+  justify-content: center;
+  align-items: center;
+  height: 200;
+}
+
+#hasilKeliling {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#hasilLuas {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
