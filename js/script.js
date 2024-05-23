@@ -31,16 +31,16 @@ function hitungKeliling() {
 }
 
 function resetLuas() {
-  document.getElementById("inputAlas").value = "";
-  document.getElementById("inputTinggi").value = "";
+  document.getElementById("alas").value = "";
+  document.getElementById("tinggi").value = "";
   document.querySelector(".hasilLuas").innerHTML = "";
   document.querySelector(".rumusLuas").innerHTML = "";
 }
 
 function resetKeliling() {
-  document.getElementById("inputSisi1").value = "";
-  document.getElementById("inputSisi2").value = "";
-  document.getElementById("inputSisi3").value = "";
+  document.getElementById("Sisi1").value = "";
+  document.getElementById("Sisi2").value = "";
+  document.getElementById("Sisi3").value = "";
   document.querySelector(".hasilKeliling").innerHTML = "";
   document.querySelector(".rumusKeliling").innerHTML = "";
 }
